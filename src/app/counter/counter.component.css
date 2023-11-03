@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+div {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 36px;
+  color: midnightblue;
+}
+
+h1:last-child {
+  font-size: 20px;
+  color: yellow;
+  margin-top: 10px;
+}
