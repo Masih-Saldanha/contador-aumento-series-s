@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./counter.component.css']
 })
 export class CounterComponent implements OnInit {
-  counter: string = 'XX dias, XX horas, XX minutos, XX segundos';
+  counter: string = 'XX dias, XX horas, XX minutos e XX segundos';
 
   ngOnInit() {
     const referenceDate = new Date('2023-10-27T00:00:00');
@@ -20,7 +20,7 @@ export class CounterComponent implements OnInit {
       const minutes = Math.floor(((seconds % 86400) % 3600) / 60);
       const secondsLeft = seconds % 60;
       
-      this.counter = `${days} dias, ${hours} horas, ${minutes} minutos, ${secondsLeft} segundos`;
+      this.counter = `${days} dias, ${hours} horas, ${minutes} minutos e ${secondsLeft} segundos`;
     }, 1000);
   }
 }
