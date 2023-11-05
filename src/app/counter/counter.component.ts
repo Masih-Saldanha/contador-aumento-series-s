@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./counter.component.css']
 })
 export class CounterComponent implements OnInit {
-  counter: string = '0:00:00:00';
+  counter: string = 'XX dias, XX horas, XX minutos, XX segundos';
 
   ngOnInit() {
     const referenceDate = new Date('2023-10-27T00:00:00');
